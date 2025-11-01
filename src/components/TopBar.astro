@@ -1,0 +1,73 @@
+<nav
+    class="fixed top-4 px-4 py-2 rounded-md bg-neutral-700/60 flex justify-between items-center w-11/12 backdrop-blur-2xl z-20 left-1/2 -translate-x-1/2"
+>
+    <!-- LOGO -->
+    <h2 class="text-white text-2xl font-semibold">🏀 Basket</h2>
+
+    <!-- BOTÓN HAMBURGUESA (solo visible en móvil) -->
+    <button
+        id="menu-toggle"
+        class="text-white text-3xl lg:hidden focus:outline-none"
+    >
+        ☰
+    </button>
+
+    <!-- MENÚ -->
+    <ul
+        id="menu"
+        class="hidden lg:flex gap-3 text-white flex-col lg:flex-row absolute lg:static top-16 left-0 w-full lg:w-auto bg-neutral-800/90 lg:bg-transparent p-4 lg:p-0 rounded-md lg:rounded-none backdrop-blur-2xl lg:backdrop-blur-none transition-all duration-300"
+    >
+        <li>
+            <a
+                href="#historia"
+                class="block p-2 rounded-sm hover:bg-orange-400 cursor-pointer duration-300"
+                >🏀 Historia del Básquetbol</a
+            >
+        </li>
+        <li>
+            <a
+                href="#jugadores"
+                class="block p-2 rounded-sm hover:bg-orange-400 cursor-pointer duration-300"
+                >🌟 Jugadores Icónicos</a
+            >
+        </li>
+        <li>
+            <a
+                href="#equipos"
+                class="block p-2 rounded-sm hover:bg-orange-400 cursor-pointer duration-300"
+                >🏆 Equipos y Ligas</a
+            >
+        </li>
+        <li>
+            <a
+                href="#entrenamiento"
+                class="block p-2 rounded-sm hover:bg-orange-400 cursor-pointer duration-300"
+                >🧠 Entrenamiento y Tácticas</a
+            >
+        </li>
+        <li>
+            <a
+                href="#estadisticas"
+                class="block p-2 rounded-sm hover:bg-orange-400 cursor-pointer duration-300"
+                >📊 Estadísticas y Datos Curiosos</a
+            >
+        </li>
+        <li>
+            <a
+                href="#conclusion"
+                class="block p-2 rounded-sm hover:bg-orange-400 cursor-pointer duration-300"
+                >🏁 Conclusión</a
+            >
+        </li>
+    </ul>
+</nav>
+
+<script type="module">
+    // Script simple para abrir/cerrar el menú en móvil
+    const menuToggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+
+    menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+    });
+</script>

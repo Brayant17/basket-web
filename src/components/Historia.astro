@@ -1,0 +1,70 @@
+---
+import historiaPNG from "../assets/Dr._James_Naismith.jpg";
+---
+<section class="w-full bg-neutral-900 py-28" id="historia">
+    <div class="w-11/12 md:w-10/12 m-auto">
+        <!-- Bloque: Título e introducción -->
+        <div class="flex flex-col md:flex-row items-start gap-8">
+            <div class="md:w-1/2">
+                <h2
+                    class="text-orange-400 text-3xl mb-4 text-center md:text-left"
+                >
+                    Historia
+                </h2>
+            </div>
+            <div class="md:w-1/2 text-white">
+                <span class="text-sm inline-block mb-3 text-orange-400"
+                    >Introducción</span
+                >
+                <p class="text-base leading-relaxed">
+                    El básquetbol es uno de los deportes de conjunto más
+                    populares del mundo, practicado por millones de personas de
+                    todas las edades. Su historia refleja innovación, pasión y
+                    evolución constante.
+                </p>
+            </div>
+        </div>
+
+        <!-- Bloque: Imagen + desarrollo -->
+        <div class="flex flex-col md:flex-row items-center gap-10 pt-10">
+            <div class="md:w-1/2 w-full">
+                <img
+                    src={historiaPNG.src}
+                    alt="James Naismith"
+                    class="w-full h-80 md:h-full object-cover rounded-xl shadow-lg"
+                />
+            </div>
+
+            <div class="md:w-1/2 w-full pt-6 md:pt-0">
+                <span class="text-sm inline-block mb-3 text-orange-400"
+                    >Desarrollo</span
+                >
+                <p class="text-white text-base leading-relaxed">
+                    El básquetbol fue inventado en 1891 por James Naismith, un
+                    profesor canadiense de educación física en Springfield
+                    College (EE. UU.). Buscaba un juego que pudiera practicarse
+                    bajo techo durante el invierno. El primer partido se jugó
+                    con una pelota de fútbol y dos canastas de duraznos como
+                    aros. Con el paso del tiempo, se establecieron reglas
+                    oficiales y se expandió por todo el mundo. En 1932 se fundó
+                    la Federación Internacional de Baloncesto (FIBA), y el
+                    deporte fue incluido en los Juegos Olímpicos de Berlín 1936.
+                    Hoy, la NBA (National Basketball Association) es la liga
+                    profesional más famosa, con jugadores reconocidos
+                    mundialmente.
+                </p>
+
+                <!-- Video responsivo -->
+                <div class="aspect-video w-full mt-6">
+                    <iframe
+                        class="w-full h-full rounded-lg"
+                        src="https://www.youtube.com/embed/nZmvxHZQUCM"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

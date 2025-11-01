@@ -1,0 +1,113 @@
+---
+// jugadores
+import jordan from "../assets/Michael-Jordan-1988.webp";
+import lebron from "../assets/lebron.jpeg";
+import kobe from "../assets/kobe-bryant.webp";
+import curry from "../assets/Curry.jpg";
+---
+<section class="w-full bg-neutral-900 py-28" id="jugadores">
+    <div class="w-10/12 m-auto">
+        <h2 class="text-orange-400 text-3xl text-center">Jugadores Icónicos</h2>
+
+        <div class="mt-4 w-full flex flex-col items-center justify-center">
+            <span class="text-sm inline-block mb-3 text-orange-400"
+                >Introducción</span
+            >
+            <p class="text-white text-base md:w-1/2 text-center">
+                A lo largo de la historia, el básquetbol ha sido protagonizado
+                por atletas que han inspirado generaciones enteras. Su talento,
+                disciplina y liderazgo los convirtieron en leyendas del deporte.
+            </p>
+        </div>
+
+        <!-- GRID AJUSTADO -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 py-10">
+            <!-- JUGADOR -->
+            <div class="opacity-50 group hover:opacity-100 duration-300">
+                <div class="rounded-xl w-full overflow-hidden h-80">
+                    <img
+                        class="w-full h-full object-cover group-hover:scale-105 duration-300 ease-in"
+                        src={jordan.src}
+                        alt="Michael Jordan"
+                    />
+                </div>
+                <div class="p-2">
+                    <h3 class="text-2xl text-white">Michael Jordan</h3>
+                    <p class="text-white">
+                        Considerado el mejor de todos los tiempos. Ganó 6
+                        campeonatos con los Chicago Bulls y fue 5 veces MVP.
+                    </p>
+                </div>
+            </div>
+
+            <div class="opacity-50 group hover:opacity-100 duration-300">
+                <div class="rounded-xl w-full overflow-hidden h-80">
+                    <img
+                        class="w-full h-full object-cover group-hover:scale-105 duration-300 ease-in"
+                        src={lebron.src}
+                        alt="LeBron James"
+                    />
+                </div>
+                <div class="p-2">
+                    <h3 class="text-2xl text-white">LeBron James</h3>
+                    <p class="text-white">
+                        Figura actual, con más de 20 temporadas en la NBA.
+                        Reconocido por su versatilidad y liderazgo.
+                    </p>
+                </div>
+            </div>
+
+            <div class="opacity-50 group hover:opacity-100 duration-300">
+                <div class="rounded-xl w-full overflow-hidden h-80">
+                    <img
+                        class="w-full h-full object-cover group-hover:scale-105 duration-300 ease-in"
+                        src={kobe.src}
+                        alt="Kobe Bryant"
+                    />
+                </div>
+                <div class="p-2">
+                    <h3 class="text-2xl text-white">Kobe Bryant</h3>
+                    <p class="text-white">
+                        Una leyenda de los Lakers, símbolo de esfuerzo y
+                        determinación. Ganó 5 anillos y un oro olímpico.
+                    </p>
+                </div>
+            </div>
+
+            <div class="opacity-50 group hover:opacity-100 duration-300">
+                <div class="rounded-xl w-full overflow-hidden h-80">
+                    <img
+                        class="w-full h-full object-cover group-hover:scale-105 duration-300 ease-in"
+                        src={curry.src}
+                        alt="Stephen Curry"
+                    />
+                </div>
+                <div class="p-2">
+                    <h3 class="text-2xl text-white">Stephen Curry</h3>
+                    <p class="text-white">
+                        Revolucionó el juego moderno con su estilo de tiro de
+                        larga distancia.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIDEO RESPONSIVO -->
+        <div class="mt-12 flex flex-col items-center">
+            <h3 class="text-orange-400 text-2xl mb-4 text-center">
+                🎥 Momentos Legendarios del Básquet
+            </h3>
+            <div
+                class="aspect-video w-full md:w-3/4 lg:w-1/2 rounded-xl overflow-hidden shadow-lg"
+            >
+                <iframe
+                    class="w-full h-full"
+                    src="https://www.youtube.com/embed/Y9uHYYftdV0"
+                    title="Momentos legendarios del básquet"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>

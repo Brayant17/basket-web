@@ -1,0 +1,87 @@
+---
+import portada from "../assets/portada.jpg";
+---
+
+<header class="w-full bg-neutral-900">
+	<div class="grid grid-cols-1 lg:grid-cols-3 h-auto lg:h-screen">
+		<!-- TEXTO -->
+		<aside
+			class="lg:col-span-2 p-8 md:p-14 text-white flex flex-col justify-between"
+		>
+			<div class="py-6">
+				<h1
+					class="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-primary font-semibold leading-tight"
+				>
+					En la Cancha:
+					<span
+						class="text-black [text-shadow:2px_2px_0_white,-2px_2px_0_white,2px_-2px_0_white,-2px_-2px_0_white]"
+					>
+						Mundo
+					</span>
+					del Básquet
+				</h1>
+			</div>
+
+			<div class="mt-6">
+				<p
+					class="text-base md:text-lg leading-relaxed w-full md:w-4/5 lg:w-3/5"
+				>
+					Bienvenido a <span class="text-orange-400 font-semibold"
+						>Pasión por el Básquet</span
+					>, un espacio dedicado a los amantes de este emocionante
+					deporte. Aquí encontrarás información sobre su historia,
+					jugadores, equipos, tácticas y estadísticas que han marcado
+					la historia del baloncesto mundial.
+				</p>
+
+				<div class="py-3">
+					<p class="text-orange-400 text-sm md:text-base">
+						By: Sofía Guadalupe Solís Castillo — <span
+							>Grupo: 201</span
+						>
+					</p>
+				</div>
+
+				<div class="pt-4">
+					<button
+						class="bg-amber-600 px-6 py-2 rounded-full flex items-center justify-between gap-6 font-semibold cursor-pointer hover:bg-orange-400 transition duration-300"
+					>
+						Explorar Más
+						<span
+							class="p-1 text-neutral-900 bg-white rounded-full"
+						>
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"
+							>
+								<path
+									stroke="none"
+									d="M0 0h24v24H0z"
+									fill="none"></path>
+								<path d="M5 12h14"></path>
+								<path d="M13 18l6 -6"></path>
+								<path d="M13 6l6 6"></path>
+							</svg>
+						</span>
+					</button>
+				</div>
+			</div>
+		</aside>
+
+		<!-- IMAGEN -->
+		<div class="w-full h-80 lg:h-full order-first lg:order-last">
+			<img
+				class="w-full h-full object-cover"
+				src={portada.src}
+				alt="Portada de básquetbol"
+			/>
+		</div>
+	</div>
+</header>

@@ -1,0 +1,142 @@
+---
+import lakers from "../assets/lakers.png";
+import chicagoBulls from "../assets/chicagoBulls.jpg";
+import Warriors from "../assets/Golden-State-Warriors.jpg";
+import Boston from "../assets/celtslogo.webp";
+---
+
+<section class="w-full bg-neutral-900 py-28" id="equipos">
+    <div class="w-10/12 m-auto">
+        <!-- Título -->
+        <h2 class="text-orange-400 text-3xl text-center">Equipos y Ligas</h2>
+
+        <!-- Introducción -->
+        <div class="mt-6 w-full flex flex-col items-center justify-center">
+            <span class="text-sm inline-block mb-3 text-orange-400"
+                >🏆 Introducción</span
+            >
+            <p class="text-white text-base md:w-1/2 text-center">
+                El básquetbol se juega a nivel mundial en diferentes ligas y
+                competiciones. La NBA es la más famosa, pero existen también
+                torneos internacionales y ligas nacionales en muchos países.
+            </p>
+        </div>
+
+        <!-- Desarrollo NBA con tarjetas -->
+        <div class="mt-12">
+            <span class="text-sm inline-block mb-6 text-orange-400"
+                >🏀 Desarrollo</span
+            >
+            <h3 class="text-2xl text-white mb-6">NBA (EE. UU.)</h3>
+
+            <div
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+            >
+                <!-- Tarjeta 1 -->
+                <div
+                    class="bg-neutral-800 rounded-xl overflow-hidden shadow-lg hover:scale-105 hover:shadow-2xl transition-all duration-300 flex flex-col h-80"
+                >
+                    <div
+                        class="bg-black/30 flex justify-center items-center flex-1 overflow-hidden"
+                    >
+                        <img
+                            class="w-full h-full object-cover"
+                            src={lakers.src}
+                            alt="Los Angeles Lakers"
+                        />
+                    </div>
+                    <div class="p-4">
+                        <p class="text-white text-sm mb-2">
+                            Ciudad: Los Ángeles
+                        </p>
+                        <p class="text-white text-sm mb-2">Fundación: 1947</p>
+                        <p class="text-white text-sm">Títulos: 17</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div
+                    class="bg-neutral-800 rounded-xl overflow-hidden shadow-lg hover:scale-105 hover:shadow-2xl transition-all duration-300 flex flex-col h-80"
+                >
+                    <div
+                        class="bg-black/30 flex justify-center items-center flex-1 overflow-hidden"
+                    >
+                        <img
+                            class="w-full h-full object-cover"
+                            src={chicagoBulls.src}
+                            alt="Chicago Bulls"
+                        />
+                    </div>
+                    <div class="p-4">
+                        <p class="text-white text-sm mb-2">Ciudad: Chicago</p>
+                        <p class="text-white text-sm mb-2">Fundación: 1966</p>
+                        <p class="text-white text-sm">Títulos: 6</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div
+                    class="bg-neutral-800 rounded-xl overflow-hidden shadow-lg hover:scale-105 hover:shadow-2xl transition-all duration-300 flex flex-col h-80"
+                >
+                    <div
+                        class="bg-black/30 flex justify-center items-center flex-1 overflow-hidden"
+                    >
+                        <img
+                            class="w-full h-full object-cover"
+                            src={Warriors.src}
+                            alt="Golden State Warriors"
+                        />
+                    </div>
+                    <div class="p-4">
+                        <p class="text-white text-sm mb-2">
+                            Ciudad: San Francisco
+                        </p>
+                        <p class="text-white text-sm mb-2">Fundación: 1946</p>
+                        <p class="text-white text-sm">Títulos: 7</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div
+                    class="bg-neutral-800 rounded-xl overflow-hidden shadow-lg hover:scale-105 hover:shadow-2xl transition-all duration-300 flex flex-col h-80"
+                >
+                    <div
+                        class="bg-black/30 flex justify-center items-center flex-1 overflow-hidden"
+                    >
+                        <img
+                            class="w-full h-full object-cover"
+                            src={Boston.src}
+                            alt="Boston Celtics"
+                        />
+                    </div>
+                    <div class="p-4">
+                        <p class="text-white text-sm mb-2">Ciudad: Boston</p>
+                        <p class="text-white text-sm mb-2">Fundación: 1946</p>
+                        <p class="text-white text-sm">Títulos: 17</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Otras ligas -->
+        <div class="mt-12 space-y-4">
+            <p class="text-white">
+                <strong>Euroliga (Europa):</strong> Reúne a los mejores clubes europeos.
+                Destacan el Real Madrid, FC Barcelona y Anadolu Efes.
+            </p>
+            <p class="text-white">
+                <strong>LNBP (México):</strong> Liga Nacional de Baloncesto Profesional,
+                donde equipos como Fuerza Regia o Astros de Jalisco representan el
+                talento mexicano.
+            </p>
+            <p class="text-white">
+                <strong>FIBA World Cup:</strong> Torneo internacional más importante
+                a nivel de selecciones.
+            </p>
+            <p class="text-white">
+                <strong>Juegos Olímpicos:</strong> El básquetbol olímpico es una
+                de las disciplinas más vistas y competitivas.
+            </p>
+        </div>
+    </div>
+</section>
