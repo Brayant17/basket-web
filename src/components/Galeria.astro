@@ -1,0 +1,49 @@
+---
+import entrenamiento1 from '../assets/entrenamiento1.avif'
+import entrenamiento2 from '../assets/entrenamiento2.avif'
+import entrenamiento3 from '../assets/entrenamiento3.avif'
+---
+
+<section class="bg-neutral-900 py-20" id="galeria">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-4xl md:text-5xl font-bold text-orange-400 mb-10">
+            Galería
+        </h2>
+        <p class="text-white mb-12 text-lg max-w-2xl mx-auto">
+            Momentos destacados de nuestros entrenamientos, torneos y el
+            ambiente único de nuestra academia.
+        </p>
+
+        <!-- Bento grid -->
+        <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[200px] md:auto-rows-[250px]"
+        >
+            <!-- Imagen 1 grande -->
+            <div class="md:col-span-2 md:row-span-2 overflow-hidden rounded-lg">
+                <img
+                    src={entrenamiento1.src}
+                    alt="Entrenamiento de equipo"
+                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                />
+            </div>
+
+            <!-- Imagen 2 -->
+            <div class="overflow-hidden rounded-lg">
+                <img
+                    src={entrenamiento2.src}
+                    alt="Jugador practicando tiro"
+                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                />
+            </div>
+
+            <!-- Imagen 3 -->
+            <div class="overflow-hidden rounded-lg">
+                <img
+                    src={entrenamiento3.src}
+                    alt="Entrenador dando indicaciones"
+                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                />
+            </div>
+        </div>
+    </div>
+</section>
